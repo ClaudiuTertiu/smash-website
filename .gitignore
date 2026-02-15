@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# build / export
+.next
+out
+
+# misc
+.DS_Store
+*.pem
+.env*.local
+
+# debug
+npm-debug.log*
+.pnpm-debug.log*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# TypeScript
+next-env.d.ts
