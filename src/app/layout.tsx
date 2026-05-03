@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  variable: "--font-montserrat",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://smashpadel.ro"),
@@ -45,9 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro" className="dark">
-      <body
-        className={`${poppins.variable} ${montserrat.variable} font-sans min-h-screen bg-[#0B0B0B] text-gray-100 antialiased`}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        />
+      </head>
+      <body className="font-sans min-h-screen bg-[#0B0B0B] text-gray-100 antialiased">
         <Navbar />
         {children}
         <Footer />

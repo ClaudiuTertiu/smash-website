@@ -8,6 +8,8 @@
   --primary-glow: rgba(204, 10, 30, 0.32);
   --dark: #0b0b0b;
   --dark-50: #1a1a1a;
+  --font-poppins: "Poppins";
+  --font-montserrat: "Montserrat";
 }
 
 html {
