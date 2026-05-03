@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { transitionStagger, viewportDefault } from "@/lib/transitions";
 
 const galleryImages = [
-  { src: "/gallery-1.png", alt: "Jucător de padel în acțiune — smash spectaculos" },
-  { src: "/gallery-2.png", alt: "Lovitură dinamică pe terenul de padel" },
-  { src: "/gallery-5.png", alt: "Serviciu la fileu — padel profesionist" },
-  { src: "/gallery-4.png", alt: "Jucător în mișcare pe fundal roșu vibrant" },
+  { src: "/gallery-1.png", alt: "Jucător pe terenul de padel" },
+  { src: "/gallery-2.png", alt: "Jucător pregătit de joc pe terenul de padel" },
+  { src: "/gallery-5.png", alt: "Teren de padel indoor" },
+  { src: "/gallery-4.png", alt: "Meci de padel pe teren indoor" },
 ];
 
 export default function GalleryGrid() {

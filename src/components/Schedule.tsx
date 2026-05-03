@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { transitionItem } from "@/lib/transitions";
 
 const schedule = [
-  { days: "Luni – Vineri", hours: "16:00 – 22:00" },
+  { days: "Luni – Vineri", hours: "14:00 – 22:00" },
   { days: "Sâmbătă – Duminică", hours: "09:00 – 22:00" },
 ];
 
