@@ -1,8 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=${DEPLOYPATH:-/home/$USER/public_html/}
-    - /bin/bash -lc 'cd "$CPANEL_REPO_ROOT" 2>/dev/null || cd "$PWD"'
-    - /bin/bash -lc 'npm ci'
-    - /bin/bash -lc 'npm run build'
-    - /bin/bash -lc 'rsync -a --delete out/ "$DEPLOYPATH"'
+    - export DEPLOYPATH="${DEPLOYPATH:-/home/$USER/public_html/}"
+    - /bin/bash -lc 'set -euo pipefail; echo "Deploy path: $DEPLOYPATH"; echo "Repo cwd: $(pwd)"; command -v node >/dev/null 2>&1 && node -v || true; command -v npm >/dev/null 2>&1 && npm -v || true; npm ci; npm run build; if command -v rsync >/dev/null 2>&1; then rsync -a --delete out/ "$DEPLOYPATH"; else rm -rf "$DEPLOYPATH/_next" "$DEPLOYPATH/index.html" "$DEPLOYPATH/404.html" "$DEPLOYPATH/icon.svg"; cp -R out/* "$DEPLOYPATH"; fi; echo "Deploy done: $(date)"'
