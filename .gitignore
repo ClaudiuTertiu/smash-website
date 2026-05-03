@@ -15,6 +15,8 @@ out
 # debug
 npm-debug.log*
 .pnpm-debug.log*
+.cpanel-deploy.log
+.cpanel-status.txt
 
 # IDE
 .idea
