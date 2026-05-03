@@ -24,13 +24,16 @@ Pe hosting shared/cPanel nu trebuie pornit `next start`; trebuie publicat contin
 
 - `Node.js >= 18.18.0`
 - `npm >= 9`
-- repository-ul trebuie să ruleze `.cpanel.yml` după pull/deploy
+- repository-ul trebuie sa ruleze `.cpanel.yml` dupa pull/deploy
+- `.cpanel.yml` urmeaza modelul recomandat in ghidul cPanel pentru Git deployment: task-uri simple executate direct din repository
 
 Fisierul `.cpanel.yml` din proiect:
 
 1. instaleaza dependentele,
-2. rulează `npm run build`,
+2. ruleaza `npm run build`,
 3. copiaza exportul static din `out/` in `/home/smashpad/public_html`.
+
+In cPanel, statusul `queued` inseamna de obicei ca cererea de deploy a fost acceptata, dar worker-ul de deploy nu a inceput inca executia task-urilor. Daca ramane blocat pe `queued`, problema este de obicei in executia Git Deployment din cPanel, nu in build-ul Next.js.
 
 Daca deployment-ul tot esueaza in cPanel, verifica in log prima eroare reala:
 
