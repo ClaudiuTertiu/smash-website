@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=${DEPLOYPATH:-/home/$USER/public_html/}
+    - /bin/bash -lc 'cd "$CPANEL_REPO_ROOT" 2>/dev/null || cd "$PWD"'
+    - /bin/bash -lc 'npm ci'
+    - /bin/bash -lc 'npm run build'
+    - /bin/bash -lc 'rsync -a --delete out/ "$DEPLOYPATH"'
