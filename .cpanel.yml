@@ -1,10 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/smashpad/public_html
-    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/mkdir -p /home/smashpad/public_html
     - npm ci --no-audit --no-fund || npm install --no-audit --no-fund
     - npm run build
-    - /bin/find "$DEPLOYPATH" -mindepth 1 -maxdepth 1 ! -name ".well-known" -exec rm -rf {} +
-    - /bin/cp -R out/. "$DEPLOYPATH/"
-    - /bin/sh -c 'printf "Deployment successful\nTimestamp: %s\n" "$(date)" > "$DEPLOYPATH/_deploy.txt"'
+    - /bin/find /home/smashpad/public_html -mindepth 1 -maxdepth 1 ! -name ".well-known" -exec rm -rf {} +
+    - /bin/cp -R out/. /home/smashpad/public_html/
+    - /bin/sh -c 'printf "Deployment successful\nTimestamp: %s\n" "$(date)" > /home/smashpad/public_html/_deploy.txt'
