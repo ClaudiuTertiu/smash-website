@@ -2,58 +2,58 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Termeni si conditii | Smash Padel Focsani",
+  title: "Termeni și condiții | Smash Padel Focșani",
   description:
-    "Termenii si conditiile de utilizare pentru site-ul Smash Padel Focsani si informatiile despre rezervari si continutul publicat.",
+    "Termenii și condițiile de utilizare pentru site-ul Smash Padel Focșani și informațiile despre rezervări și conținutul publicat.",
 };
 
 const sections = [
   {
-    title: "1. Informatii generale",
+    title: "1. Informații generale",
     content: [
-      "Prezenta pagina stabileste conditiile de utilizare a site-ului smashpadel.ro si a informatiilor publicate sub brandul Smash Padel Focsani.",
-      "Prin accesarea si utilizarea acestui site, accepti sa respecti acesti termeni si conditii. Daca nu esti de acord cu acestia, te rugam sa nu folosesti site-ul.",
+      "Prezenta pagină stabilește condițiile de utilizare a site-ului smashpadel.ro și a informațiilor publicate sub brandul Smash Padel Focșani.",
+      "Prin accesarea și utilizarea acestui site, accepți să respecți acești termeni și condiții. Dacă nu ești de acord cu aceștia, te rugăm să nu folosești site-ul.",
     ],
   },
   {
     title: "2. Scopul site-ului",
     content: [
-      "Site-ul are rol informativ si de prezentare pentru activitatea clubului Smash Padel Focsani, inclusiv detalii despre facilitati, program, preturi, modalitati de contact si rezervare.",
-      "Informatiile publicate sunt oferite cu buna-credinta si pot fi actualizate, modificate sau completate fara o notificare prealabila.",
+      "Site-ul are rol informativ și de prezentare pentru activitatea clubului Smash Padel Focșani, inclusiv detalii despre facilități, program, prețuri, modalități de contact și rezervare.",
+      "Informațiile publicate sunt oferite cu bună-credință și pot fi actualizate, modificate sau completate fără o notificare prealabilă.",
     ],
   },
   {
-    title: "3. Rezervari si servicii terte",
+    title: "3. Rezervări și servicii terțe",
     content: [
-      "Rezervarile pentru terenuri pot fi realizate prin intermediul aplicatiei Playtomic sau al altor servicii externe indicate pe site. Utilizarea acestor servicii poate fi supusa unor termeni si politici proprii, stabilite de operatorii lor.",
-      "Smash Padel Focsani nu poate fi responsabil pentru indisponibilitatea, erorile sau politicile comerciale ale platformelor terte folosite pentru rezervare sau plata.",
+      "Rezervările pentru terenuri pot fi realizate prin intermediul aplicației Playtomic sau al altor servicii externe indicate pe site. Utilizarea acestor servicii poate fi supusă unor termeni și politici proprii, stabilite de operatorii lor.",
+      "Smash Padel Focșani nu poate fi responsabil pentru indisponibilitatea, erorile sau politicile comerciale ale platformelor terțe folosite pentru rezervare sau plată.",
     ],
   },
   {
-    title: "4. Continut si proprietate intelectuala",
+    title: "4. Conținut și proprietate intelectuală",
     content: [
-      "Textele, imaginile, elementele grafice, logo-urile si structura site-ului apartin Smash Padel Focsani sau sunt utilizate in baza unor drepturi legitime de folosire.",
-      "Este interzisa copierea, distribuirea, modificarea sau reutilizarea continutului site-ului in scop comercial fara acordul prealabil, expres si scris al titularului drepturilor.",
+      "Textele, imaginile, elementele grafice, logo-urile și structura site-ului aparțin Smash Padel Focșani sau sunt utilizate în baza unor drepturi legitime de folosire.",
+      "Este interzisă copierea, distribuirea, modificarea sau reutilizarea conținutului site-ului în scop comercial fără acordul prealabil, expres și scris al titularului drepturilor.",
     ],
   },
   {
-    title: "5. Limitarea raspunderii",
+    title: "5. Limitarea răspunderii",
     content: [
-      "Depunem eforturi rezonabile pentru ca informatiile afisate pe site sa fie corecte si actualizate. Cu toate acestea, nu garantam ca toate informatiile sunt in permanenta complete, lipsite de erori sau disponibile fara intreruperi.",
-      "Utilizarea site-ului se face pe propria raspundere. Smash Padel Focsani nu raspunde pentru prejudicii directe sau indirecte rezultate din utilizarea site-ului ori din imposibilitatea temporara de accesare a acestuia.",
+      "Depunem eforturi rezonabile pentru ca informațiile afișate pe site să fie corecte și actualizate. Cu toate acestea, nu garantăm că toate informațiile sunt în permanență complete, lipsite de erori sau disponibile fără întreruperi.",
+      "Utilizarea site-ului se face pe propria răspundere. Smash Padel Focșani nu răspunde pentru prejudicii directe sau indirecte rezultate din utilizarea site-ului ori din imposibilitatea temporară de accesare a acestuia.",
     ],
   },
   {
     title: "6. Link-uri externe",
     content: [
-      "Site-ul poate contine link-uri catre platforme sau servicii externe, precum Playtomic, Google Maps sau retele sociale. Aceste link-uri sunt oferite pentru confortul utilizatorilor.",
-      "Nu controlam continutul sau politicile acestor site-uri terte si nu ne asumam raspunderea pentru continutul, disponibilitatea sau practicile lor de confidentialitate.",
+      "Site-ul poate conține link-uri către platforme sau servicii externe, precum Playtomic, Google Maps sau rețele sociale. Aceste link-uri sunt oferite pentru confortul utilizatorilor.",
+      "Nu controlăm conținutul sau politicile acestor site-uri terțe și nu ne asumăm răspunderea pentru conținutul, disponibilitatea sau practicile lor de confidențialitate.",
     ],
   },
   {
     title: "7. Contact",
     content: [
-      "Pentru intrebari despre acesti termeni si conditii sau pentru informatii suplimentare despre activitatea clubului, ne poti contacta la adresa contact@smashpadel.ro, la numarul +40 747 287 989 sau la locatia din Bd. Bucuresti nr. 16A, Focsani, Vrancea.",
+      "Pentru întrebări despre acești termeni și condiții sau pentru informații suplimentare despre activitatea clubului, ne poți contacta la adresa contact@smashpadel.ro, la numărul +40 747 287 989 sau la locația din Bd. București nr. 16A, Focșani, Vrancea.",
     ],
   },
 ] as const;
@@ -61,9 +61,9 @@ const sections = [
 export default function TermeniSiConditiiPage() {
   return (
     <LegalPage
-      title="Termeni si conditii"
+      title="Termeni și condiții"
       updatedAt="8 mai 2026"
-      intro="Acesti termeni si conditii descriu regulile generale de utilizare a site-ului Smash Padel Focsani si modul in care pot fi accesate informatiile si serviciile prezentate online."
+      intro="Acești termeni și condiții descriu regulile generale de utilizare a site-ului Smash Padel Focșani și modul în care pot fi accesate informațiile și serviciile prezentate online."
       sections={[...sections]}
     />
   );

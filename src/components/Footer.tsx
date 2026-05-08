@@ -16,6 +16,7 @@ const quickLinks = [
 const legalLinks = [
   { href: "/termeni-si-conditii", label: "Termeni și condiții" },
   { href: "/politica-de-confidentialitate", label: "Politica de confidențialitate" },
+  { href: "/politica-de-cookies", label: "Politica de cookies" },
 ];
 
 const socialLinks = [

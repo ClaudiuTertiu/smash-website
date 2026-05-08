@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://smashpadel.ro"),
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="font-sans min-h-screen bg-[#0B0B0B] text-gray-100 antialiased">
         <Navbar />
         {children}
+        <CookieConsentBanner />
         <Footer />
       </body>
     </html>
