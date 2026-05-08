@@ -3,9 +3,9 @@ node_modules
 .pnp
 .pnp.js
 
-# build / export
+# build artifacts (intermediate Next.js cache only)
 .next
-out
+# Note: out/ is intentionally committed so cPanel only needs to copy files
 
 # misc
 .DS_Store
